@@ -7,12 +7,12 @@ int add(int x, int y)
 
 void printResult(int z)
 {
-	std::cout << "The answer is: " << z << '\n';
+	std::cout << "The answer is definitely: " << z << '\n';
 }
 
 int getUserInput()
 {
-	std::cout << "Enter a number: ";
+	std::cout << "Enter any number: ";
 	int x{};
 	std::cin >> x;
 	return x;
