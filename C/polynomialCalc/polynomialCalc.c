@@ -11,6 +11,7 @@ int exitUser(int userChoice)
 int main(void)
 {
     int numTerms, userChoice;
+    float power1, power2, power3, power4, power5;
     do
     {
         printf("How many terms are there in the polynomial? (max of 5 terms)");
@@ -19,5 +20,6 @@ int main(void)
             printf("Too many terms for accurate calculation.\n");
 	    exitUser(userChoice);
         }
+
     } while(userChoice != 0);
 }
