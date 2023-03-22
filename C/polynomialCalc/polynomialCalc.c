@@ -10,7 +10,7 @@ int exitUser(int userChoice)
 
 int main(void)
 {
-    int numTerms, userChoice;
+    int numTerms, userChoice, retryChoice;
     float power[5], term[5];
     do
     {
@@ -25,8 +25,15 @@ int main(void)
 		printf("what is the value for term%i?\n", i);
 		scanf("%g", &term[i]);  // for truncated decimals the format character %g is used for untruncated it is a %f
 	}
-
+	
+	for(int i = 0; i <= term[i]; i++)
+	{	
+		printf("what are the powers for term%i?\n", i);
+		scanf("%g", &power[i]);
 	}
 
-    } while(userChoice != 0);
+	}
+	printf("Continue? press 0 to exit.");
+	scanf("%i", &retryChoice);
+    } while(retryChoice != 0);
 }
