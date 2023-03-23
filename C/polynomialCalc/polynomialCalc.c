@@ -32,7 +32,9 @@ int main(void)
 		printf("what are the powers for term%i?\n", j);
 		scanf("%g", &power[j]);
 	}
-	// make a for loop that prompts the user which terms have a variable
+	// make a for loop that prompts the user which terms have an x variable, this should be a simple for loop that goes through each term and asks if there's an x. 
+	// we also need to make an algorithm that prompts the user for addition/subtraction, i don't think I want to include mul and div in this program maybe later. 
+	// I'm not sure if the algorithm could be a loop or what, but maybe it could be a loop like the loop that asks for the powers of each term.
 	printf("Continue? press 0 to exit.");
 	scanf("%i", &retryChoice);
     }
