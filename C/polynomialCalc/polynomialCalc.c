@@ -10,11 +10,11 @@ int exitUser(int userChoice)
 
 int main(void)
 {
-    int numTerms, userChoice, retryChoice;
-    float power[5], term[5];
+    int numTerms, numPowers, userChoice, retryChoice;
+    float power[5], term[5], variable;
     do
     {
-        printf("How many terms are there in the polynomial? (max of 5 terms)");
+        printf("How many terms are there in the polynomial? (max of 5 terms and 1 x variable)");
         scanf("%i", &numTerms);
         if(numTerms > 5){
             printf("Too many terms for accurate calculation.\n");
@@ -26,14 +26,17 @@ int main(void)
 		scanf("%g", &term[i]);  // for truncated decimals the format character %g is used for untruncated it is a %f
 	}
 	
-	for(int i = 0; i <= term[i]; i++)
+	for(int j = 1; j <= numPowers; j++)
 	{	
-		printf("what are the powers for term%i?\n", i);
-		scanf("%g", &power[i]);
+		numPowers = numTerms;
+		printf("what are the powers for term%i?\n", j);
+		scanf("%g", &power[j]);
 	}
-
-	}
+	// make a for loop that prompts the user which terms have a variable
 	printf("Continue? press 0 to exit.");
 	scanf("%i", &retryChoice);
+    }
     } while(retryChoice != 0);
+
+    return 0;
 }
