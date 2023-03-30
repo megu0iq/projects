@@ -37,7 +37,7 @@ int main(void)
 	
 	// we also need to make an algorithm that prompts the user for addition/subtraction, i don't think I want to include mul and div in this program maybe later. 
 	// I'm not sure if the algorithm could be a loop or what, but maybe it could be a loop like the loop that asks for the powers of each term.
-	printf("Continue? press 0 to exit.");
+	printf("Continue? press 0 to exit.\n>");
 	scanf("%i", &retryChoice);
     }
    } while(retryChoice != 0);
