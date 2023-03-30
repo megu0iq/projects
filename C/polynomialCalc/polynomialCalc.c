@@ -14,23 +14,23 @@ int main(void)
     float power[5], term[5], variable;
     do
     {
-        printf("How many terms are there in the polynomial? (max of 5 terms and 1 x variable)");
+        printf("How many terms are there in the polynomial? (max of 5 terms and 1 x variable)\n>");
         scanf("%i", &numTerms);
         if(numTerms > 5){
             printf("Too many terms for accurate calculation.\n");
 	    exitUser(userChoice);
-        } else {;
+        } else {
 	for(int i = 1; i <= numTerms; i++)
 	{
-		printf("what is the value for term%i?\n", i);
+		printf("what is the value for term%i?\n>", i);
 		scanf("%g", &term[i]);  // for truncated decimals the format character %g is used for untruncated it is a %f
 	}
-	printf("What is the variable's value?");
+	printf("What is the variable's value?\n>");
 	scanf("%g", &variable);
 	for(int j = 1; j <= numPowers; j++)
 	{	
 		numPowers = numTerms;
-		printf("what are the powers for term%i?\n", j);
+		printf("what are the powers for term%i?\n>", j);
 		scanf("%g", &power[j]);
 	}
 	// make a for loop that prompts the user which terms have an x variable, this should be a simple for loop that goes through each term and asks if there's an x.
