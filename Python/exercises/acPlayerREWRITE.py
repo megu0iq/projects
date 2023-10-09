@@ -18,13 +18,13 @@ for i in acMusic:
     i = 0
     currentTime = time.time()
     elapsedTime = currentTime - startTime
-    acMusic[i].play()
+    acMusic[i].play(0)
     print("starting acMusic")
-    sleep(oneHour)
+    sleep(60)
     print("stopping acMusic")  # so acMusic[0] which is the 1am song plays for 1m twice then plays 2am song for 60 seconds and then stops for whatever reason, figure it out
     acMusic[i].stop()
+    i += 1
     if elapsedTime >= oneHour:
-        i += 1
         acMusic[i].play(0)
         sleep(oneHour)
         acMusic[i].stop()
