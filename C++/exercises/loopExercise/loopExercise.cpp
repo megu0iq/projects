@@ -1,7 +1,7 @@
 #include <iostream>
 
 int main()
-{  //trying to make a pyramaid of 1s, 2s, and 3s like that programming challenege i did when I was being taught by Divya Bajaj
+{  //trying to make a pyramaid of 1s, 2s, and 3s like that programming challenege
 int count(1), count2(1), count3(1);
    do{
     std::cout << count;
